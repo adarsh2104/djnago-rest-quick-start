@@ -51,5 +51,6 @@ A REST API based applications with following salient features:
 * MySQL
 
 
-
+### NOTE
+Add your own Facebook login credentials in Djnago settings file for testing the project. :star2::star2::star2:
 
