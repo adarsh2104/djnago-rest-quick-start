@@ -20,6 +20,7 @@ A REST API based applications with following salient features:
 3.Results Page:
   * Comments arranged in tabular format with percentage of sentiment scores.
   * Cummalative sentiment is dispalayed along with the search term.
+  * Conditional rendering of elements attributes based on state variables.
 
 <p align="center"><img width="100%" height="700px" src="https://github.com/adarsh2104/facebook_comments_analysis/blob/main/Visuals/03.Results_page.png"></img></p>
 
@@ -29,13 +30,25 @@ A REST API based applications with following salient features:
 4.[Views](https://github.com/adarsh2104/facebook_comments_analysis/blob/main/request_client/views.py):
  * Class Based API Views for GET and POST requests.
  * Model Serializers for serializing/deserializing objects of PostComment and SearchKeyword Models.
+ * Added logger for debugging the project.
 
 5.[Models](https://github.com/adarsh2104/facebook_comments_analysis/blob/main/request_client/models.py):
  * Models for saving Search Keywords and PostComments
  * Implemented Foreign Key relation between the models.
+
 6.[Utils](https://github.com/adarsh2104/facebook_comments_analysis/tree/main/request_client/utils):
- * Selenium based request client for collecting comments from Facebook posts and getting matching results
+ * Selenium based request client for collecting comments from Facebook posts and getting matching results.
+ * Saperate directory for saving Search termwise comments [screenshots](https://github.com/adarsh2104/facebook_comments_analysis/tree/main/Screenshots) 
  * Text analyzer implemented using [NTLK package](https://www.nltk.org/)
+
+### Database:
+ * Used MySQL database for saving Search Keywords and Post Comments.
+
+### Stacks Used:
+* Python 3.7
+* Django 3.2.6
+* React.JS/CSS
+* MySQL
 
 
 
